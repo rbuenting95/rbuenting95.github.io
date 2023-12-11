@@ -740,20 +740,6 @@ class _HomePageState extends State<HomePage> {
                                       ),
 
                                       FeatureProject(
-                                        imagePath: "images/pic107.jfif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/rbuenting95/Food-Delivery-App-UI");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Food delivery App",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
                                         imagePath: "images/pic108.jfif",
                                         ontab: () {
                                           method.launchURL(

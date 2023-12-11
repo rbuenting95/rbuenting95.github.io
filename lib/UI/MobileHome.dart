@@ -479,11 +479,6 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.07,
               ),
 
-              MobileProject(
-                ontab: () {},
-                image: "images/pic102.gif",
-              ),
-
               SizedBox(
                 height: size.height * 0.07,
               ),
@@ -515,11 +510,6 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.07,
               ),
 
-              MobileProject(
-                ontab: () {},
-                image: "images/pic107.jfif",
-              ),
-
               SizedBox(
                 height: size.height * 0.07,
               ),
@@ -533,18 +523,8 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.07,
               ),
 
-              MobileProject(
-                ontab: () {},
-                image: "images/pic109.jfif",
-              ),
-
               SizedBox(
                 height: size.height * 0.07,
-              ),
-
-              MobileProject(
-                ontab: () {},
-                image: "images/pic110.jfif",
               ),
 
               SizedBox(
@@ -557,7 +537,7 @@ class _MobileHomeState extends State<MobileHome> {
                     width: size.width * 0.42,
                     height: size.height * 0.6,
                     child: Image(
-                      image: AssetImage("images/pic101.png"),
+                      image: AssetImage("images/pic121.png"),
                     ),
                   ),
                   Spacer(),
@@ -653,7 +633,7 @@ class _MobileHomeState extends State<MobileHome> {
                     width: size.width * 0.44,
                     height: size.height * 0.6,
                     child: Image(
-                      image: AssetImage("images/pic118.jpeg"),
+                      image: AssetImage("images/pic120.jpeg"),
                     ),
                   ),
                   Spacer(),
@@ -662,30 +642,6 @@ class _MobileHomeState extends State<MobileHome> {
                     height: size.height * 0.6,
                     child: Image(
                       image: AssetImage("images/pic119.jpeg"),
-                    ),
-                  ),
-                ],
-              ),
-
-              SizedBox(
-                height: size.height * 0.07,
-              ),
-
-              Row(
-                children: [
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic120.png"),
-                    ),
-                  ),
-                  Spacer(),
-                  Container(
-                    width: size.width * 0.44,
-                    height: size.height * 0.6,
-                    child: Image(
-                      image: AssetImage("images/pic121.png"),
                     ),
                   ),
                 ],
