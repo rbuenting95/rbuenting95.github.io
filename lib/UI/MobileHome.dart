@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:potrtfolio/Model/Method.dart';
@@ -103,7 +104,7 @@ class _MobileHomeState extends State<MobileHome> {
                 height: size.height * 0.04,
               ),
               CustomText(
-                text: "I build things for the iOS & Android and web.",
+                text: "I build things for the Android and web.",
                 textsize: 42.0,
                 color: Color(0xffCCD6F6).withOpacity(0.6),
                 fontWeight: FontWeight.w700,
@@ -116,7 +117,7 @@ class _MobileHomeState extends State<MobileHome> {
                 child: Wrap(
                   children: [
                     Text(
-                      "I'm a freelancer based in Cherry Valley, CA specializing in building (and occasionally designing) exceptional mobile, web, applications, and everything in between.",
+                      "I'm a freelancer based in Cherry Valley, CA specializing in building (and occasionally designing) exceptional websites, applications, and everything in between.",
                       style: TextStyle(
                         color: Colors.grey,
                         fontSize: 15.0,
@@ -220,7 +221,7 @@ class _MobileHomeState extends State<MobileHome> {
                           ),
                           CustomText(
                             text:
-                                "Shortly currently, I am purshuing my Bachlor's degree in Computter science and Engineering at University of Pune, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n",
+                                "Shortly currently, I am purshuing my Bachlor's degree in Computter science at San Jose State University, as well as doing freelancing where I work on a wide variety of interesting and meaningful projects on a daily basis.\n",
                             textsize: 16.0,
                             color: Color(0xff828DAA),
                             fontWeight: FontWeight.w500,
@@ -254,16 +255,16 @@ class _MobileHomeState extends State<MobileHome> {
                                 technology(context, "Dart"),
                                 technology(context, "Flutter"),
                                 technology(context, "Firebase"),
-                                technology(context, "UI/UX (Adobe XD)"),
+                                technology(context, "React Native (React)"),
                               ],
                             ),
                             Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               mainAxisAlignment: MainAxisAlignment.spaceAround,
                               children: [
-                                technology(context, "C/C++"),
-                                technology(context, "HTML, & (S)Css"),
-                                technology(context, "MYSQL"),
+                                technology(context, "Kotlin, Java"),
+                                technology(context, "Swift, Objective-C"),
+                                technology(context, "Etc..."),
                                 technology(context, "Java"),
                               ],
                             ),
@@ -797,7 +798,7 @@ class _MobileHomeState extends State<MobileHome> {
                     ),
                     onPressed: () {
                       method.launchURL(
-                          "https://www.linkedin.com/in/rodney-buenting-67b844282/");
+                          "https://www.linkedin.com/in/rodney-buenting-67b844282");
                     },
                   ),
                   IconButton(
@@ -834,7 +835,7 @@ class _MobileHomeState extends State<MobileHome> {
                 width: MediaQuery.of(context).size.width,
                 //color: Colors.white,
                 child: Text(
-                  "Designed & Built by Rodney Buenting 💙 Flutter",
+                  "Built by Rodney Buenting 💙 Flutter",
                   textAlign: TextAlign.center,
                   style: TextStyle(
                     color: Colors.white.withOpacity(0.4),

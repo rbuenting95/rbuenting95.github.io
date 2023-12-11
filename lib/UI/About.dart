@@ -113,7 +113,7 @@ class About extends StatelessWidget {
                             technology(context, "Dart"),
                             technology(context, "Flutter"),
                             technology(context, "Firebase"),
-                            technology(context, "UI/UX (Adobe Xd)"),
+                            technology(context, "React Native (React)"),
                           ],
                         ),
                       ),
@@ -122,9 +122,9 @@ class About extends StatelessWidget {
                         height: size.height * 0.15,
                         child: Column(
                           children: [
-                            technology(context, "C/C++, Java."),
-                            technology(context, "HTML & (S)CSS"),
-                            technology(context, "MYSQL"),
+                            technology(context, "Kotlin, Java."),
+                            technology(context, "Swift, Objective-C"),
+                            technology(context, "Etc..."),
                             technology(context, "Git - Github"),
                           ],
                         ),

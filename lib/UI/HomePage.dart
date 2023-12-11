@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:potrtfolio/Model/Method.dart';
 import 'package:potrtfolio/UI/About.dart';
@@ -148,7 +149,8 @@ class _HomePageState extends State<HomePage> {
                               color: Color(0xff0A192F),
                               borderRadius: BorderRadius.circular(6.0),
                             ),
-                            child: TextButton(
+                            child: FlatButton(
+                              hoverColor: Color(0xFF3E0449),
                               onPressed: () {
                                 method.launchURL(
                                     "https://drive.google.com/file/d/12t3HmbfLqLjxx9Uo89IBhCLNkXsFOHzq/view?usp=sharing");
@@ -266,7 +268,7 @@ class _HomePageState extends State<HomePage> {
                                   ),
                                   CustomText(
                                     text:
-                                        "I build things for the iOS & Android and web.",
+                                        "I build things for the Android and web.",
                                     textsize: 56.0,
                                     color: Color(0xffCCD6F6).withOpacity(0.6),
                                     fontWeight: FontWeight.w700,
@@ -277,7 +279,7 @@ class _HomePageState extends State<HomePage> {
                                   Wrap(
                                     children: [
                                       Text(
-                                        "I'm a freelancer based in Cherry Valley, CA specializing in \nbuilding (and occasionally designing) exceptional mobile, web, \napplications, and everything in between.",
+                                        "I'm a freelancer based in Cherry Valley, CA specializing in \nbuilding (and occasionally designing) exceptional websites, \napplications, and everything in between.",
                                         style: TextStyle(
                                           color: Colors.grey,
                                           fontSize: 16.0,
@@ -328,6 +330,8 @@ class _HomePageState extends State<HomePage> {
                                 ],
                               ),
 
+                              
+
                               //About Me
                               _wrapScrollTag(
                                 index: 0,
@@ -338,7 +342,10 @@ class _HomePageState extends State<HomePage> {
                               ),
 
                               //Where I've Worked
-                              _wrapScrollTag(index: 1, child: Work()),
+                              _wrapScrollTag(
+                                index: 1,
+                                child:Work()
+                              ),
                               SizedBox(
                                 height: size.height * 0.10,
                               ),
@@ -654,7 +661,7 @@ class _HomePageState extends State<HomePage> {
                                                   MainAxisAlignment.spaceAround,
                                               children: [
                                                 OSImages(
-                                                  image: "images/pic120.png",
+                                                  image: "images/pic120.jpeg",
                                                 ),
                                                 OSImages(
                                                   image: "images/pic119.jpeg",
@@ -688,20 +695,6 @@ class _HomePageState extends State<HomePage> {
                                             ),
                                           ],
                                         ),
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic102.gif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/rbuenting95/Flutter-Web-SolMusic-Landing-Page");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "SolMusic",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Web",
                                       ),
 
                                       FeatureProject(
@@ -769,34 +762,6 @@ class _HomePageState extends State<HomePage> {
                                         projectDesc:
                                             "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
                                         projectTitle: "Plant Nursery App",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic109.jfif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/rbuenting95/Foody-App-UI-Design");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Foody",
-                                        tech1: "Dart",
-                                        tech2: "Flutter",
-                                        tech3: "Flutter UI",
-                                      ),
-
-                                      FeatureProject(
-                                        imagePath: "images/pic110.jfif",
-                                        ontab: () {
-                                          method.launchURL(
-                                              "https://github.com/rbuenting95/Flutter-Online-Food-Order-App-UI");
-                                        },
-                                        projectDesc:
-                                            "A nicer look at your GitHub profile and repo stats. Includes data visualizations of your top languages, starred repositories, and sort through your top repos by number of stars, forks, and size.",
-                                        projectTitle: "Online Food order",
                                         tech1: "Dart",
                                         tech2: "Flutter",
                                         tech3: "Flutter UI",
@@ -923,7 +888,7 @@ class _HomePageState extends State<HomePage> {
                                           100,
                                       //color: Colors.white,
                                       child: Text(
-                                        "Designed & Built by Rodney Buenting 💙 Flutter",
+                                        "Built by Rodney Buenting 💙 Flutter",
                                         style: TextStyle(
                                           color: Colors.white.withOpacity(0.4),
                                           letterSpacing: 1.75,
